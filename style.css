@@ -5,60 +5,346 @@
 }
 
 body {
-    background: #f5eee7;
+    background: #f3dabd;
     color: #2e1d15;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', serif;
+    margin: 2em;
 }
 
-header {
-    background: #3b2418;
-    color: white;
-    padding: 30px 8%;
-    position: sticky;
-    top: 0;
-    display: flex;
-    gap: 30%;
-    z-index: 1000;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.negrito {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+header{
+    margin-bottom: 30px;
+}
+header p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 15px;
 }
 
+
+/* HR LINHA HORIZONTAL */
+hr {
+    border: none;
+    height: 2.5px;
+    background-color: #38342a;
+    width: 100%;}
+.hrbold{
+    height: 5px;
+    margin: 5px 0;
+    background-color: #38342a;}
+
+
+/* TITULOJORNAL */
 .topo h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
     letter-spacing: 1px;
+    text-align: center;
 }
 
-.topo p {
-    color: #d7c0b0;
-}
 
-nav {
-    margin-top: 20px;
+
+.container {
     display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 300px;
 }
 
-nav a:hover {
-    color: #d9a066;
+.titulo-lateral {
+    font-weight: bold;
+    text-align: left;
+    font-size: 3em;
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
-.hero {
+.esquerda img {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    flex: 1;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-style: italic;
+
+}
+
+
+.citacaoFala {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #8c5c3d;
+}
+
+.legenda {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+.bloco-img {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.imgNelEra {
+    width: 70%;
+  display: block;
+  margin: 10px auto;
+}
+.bloco-img hr {
+    width: 70%;
+    margin: 10px auto;
+    background-color: #38342a;
+    height: 2.5px;
+    align-items: center;
+}
+
+.entrevista {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.entrevista h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.subtitulo {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.pergunta {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b89b7a;
+}
+
+.pergunta p {
+    margin: 5px 0;
+}
+
+
+.audio-entrevista {
+    margin-top: 70px;
+    padding: 30px 0;
+}
+
+.titulo-audio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo-audio hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background-color: #38342a;
+}
+
+.titulo-audio h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.descricao-audio {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.player-audio {
+    display: flex;
+    justify-content: center;
+}
+
+.player-audio audio {
+    width: 80%;
+    max-width: 700px;
+}
+
+
+
+
+.reportagem-final {
+    margin-top: 70px;
+    padding: 30px 0;
+}
+
+.linha-reportagem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.linha-reportagem hr {
+    flex: 1;
+    height: 2px;
+    border: none;
+    background-color: #38342a;
+}
+
+.linha-reportagem span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.descricao-reportagem {
+    max-width: 850px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-reportagem {
+    width: 85%;
+    max-width: 950px;
+    border: 5px solid #38342a;
+}
+
+
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p, .footer-info, footer h2 {
+    margin: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .topo h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .esquerda {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .titulo-lateral {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .esquerda img {
+        width: 100%;
+    }
+
+    .legenda {
+        text-align: center;
+    }
+
+    .texto {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .texto h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .citacaoFala {
+        font-size: 1.1rem;
+        padding-left: 15px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    body {
+        margin: 12px;
+    }
+
+    .topo h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .titulo-lateral {
+        font-size: 1.5rem;
+    }
+
+    .texto {
+        font-size: 0.95rem;
+    }
+
+    .texto h1 {
+        font-size: 1.6rem;
+    }
+
+    .citacaoFala {
+        font-size: 1rem;
+    }
+}
+
+/* .hero {
     height: 80vh;
     background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1600&auto=format&fit=crop') center/cover;
     position: relative;
@@ -204,24 +490,6 @@ footer h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     margin-bottom: 10px;
-}
+} */
 
-@media (max-width: 768px) {
 
-    .hero {
-        height: 60vh;
-    }
-
-    .hero-text h2 {
-        font-size: 2.5rem;
-    }
-
-    .topo {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        gap: 15px;
-    }
-}
